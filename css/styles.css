@@ -33,9 +33,14 @@ header {
 }
 
 .navbar {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     padding: var(--spacing-md) var(--spacing-xl);
     background-color: var(--secondary-color);
     position: fixed;
