@@ -32,20 +32,38 @@ header {
     padding: var(--spacing-md);
 }
 
-.navbar {
-    width: 100%;
-    max-width: 1200px;
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    padding: var(--spacing-md) var(--spacing-xl);
+.nav {
+    position: relative;
     background-color: var(--secondary-color);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: all 0.3s ease;
+    padding: var(--spacing-md);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 var(--spacing-sm);
+}
+
+.menu li a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: var(--accent-color);
+}
+
+.nav input:checked ~ .menu {
+    background-color: var(--secondary-color);
 }
