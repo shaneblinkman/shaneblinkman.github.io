@@ -1,21 +1,48 @@
 /* General */
 :root {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    outline: 1px solid red; /* Debugging outline, remove later */
+}
+
+/* Header */
 .header {
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Adjust padding as needed */
+    padding: 0px 30px; /* Adjust padding as needed */
     background-color: #f0f0f0; /* Light grey background, consider an image */
     border-bottom: 2px solid #ccc; /* Bottom border */
+}
+
+.header-text {
+    text-align: center;
+    margin: auto;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif; /* Choose subtitle font */
+    padding: 60px 40px 5px; /* Adjust padding as needed */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin: auto;
 }
 
 .title {
     text-transform: uppercase;
     font-family: 'Arial Black', sans-serif; /* Choose header font */
-    padding: 40px 40px; /* Adjust padding as needed */
+    padding: 5px 40px 20px; /* Adjust padding as needed */
     font-size: 2.5rem; /* Adjust font size as needed */
     margin: auto;
 }
@@ -24,6 +51,9 @@
 .nav-dropdown {
     position: relative; 
     display: inline-block;
+    margin-left: auto; /* Push to the right */
+    margin-bottom: 0;
+    outline: 1px solid black; /* Outline color: CHANGE */
 }
 
 .nav-dropdown-icon {
@@ -37,8 +67,9 @@
     justify-content: center;
     color: white;
     font-size: 2rem; /* Adjust size as needed */
-    padding: 2px; /* Adjust padding as needed */
+    padding: 4px; /* Adjust padding as needed */
     user-select: none; /* Prevent text selection */
+    outline: 1px solid black; /* Outline color: CHANGE */
 }
 
 .nav-dropdown-list {
@@ -79,6 +110,10 @@
 }
 
 /* Page Content */
+main {
+    flex: 1; /* Take up remaining space */
+}
+
 .page-content {
     display: none; /* Hide all sections by default */
 }
@@ -86,4 +121,15 @@
 .page-content.active {
     display: block; /* Show the active section */
     padding: 20px; /* Adjust padding as needed */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Choose footer font */
+    font-size: 0.75rem; /* Adjust font size as needed */
+    border-top: 2px solid #ccc; /* Top border */
 }
