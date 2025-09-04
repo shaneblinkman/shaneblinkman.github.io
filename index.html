@@ -5,19 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shane Blinkman - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="script.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <header class="header">
-        <h1 class="title">Shane Blinkman's Portfolio</h1>
-        <div class="nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+        <h1 class="title">Shane Blinkman</h1>
+        <!-- Navigation Dropdown Menu -->
+        <div class="nav-dropdown">
+            <span class="nav-dropdown-icon">☰</span>
+            <ul class="nav-dropdown-list">
+                <li href="#home" onclick="showPage('home'); return false;">Home</li>
+                <li href="#about" onclick="showPage('about'); return false;">About</li>
+                <li href="#projects" onclick="showPage('projects'); return false;">Projects</li>
+                <li href="#skills" onclick="showPage('skills'); return false;">Skills</li>
+                <li href="#resume" onclick="showPage('resume'); return false;">Resume</li>
+                <li href="#contact" onclick="showPage('contact'); return false;">Contact</li>
+            </ul>
         </div>
     </header>
+    <main>
+        <!-- Page Sections -->
+        <!-- Home Page -->
+        <div id="home" class="page-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>This is the home section.</p>
+        </div>
+        <!-- About Page -->
+        <div id="about" class="page-content">
+            <h2>About Me</h2>
+            <p>This is the about section.</p>
+        </div>
+        <!-- Projects Page -->
+        <div id="projects" class="page-content">
+            <h2>My Projects</h2>
+            <p>This is the projects section.</p>
+        </div>
+        <!-- Skills Page -->
+        <div id="skills" class="page-content">
+            <h2>My Skills</h2>
+            <p>This is the skills section.</p>
+        </div>
+        <!-- Resume Page -->
+        <div id="resume" class="page-content">
+            <h2>My Resume</h2>
+            <p>This is the resume section.</p>
+        </div>
+        <!-- Contact Page -->
+        <div id="contact" class="page-content">
+            <h2>Contact Me</h2>
+            <p>This is the contact section.</p>
+        </div>
 </body>
 </html>
