@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"></html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,24 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
 </head>
+
 <body>
-    <!-- Header with Title and Navigation -->
+    <!-- Header with Navigation and Title -->
     <header class="header">
+        <!-- Navigation Dropdown Menu -->
+        <nav class="nav">
+            <ul>
+                <li class="home-li"><a href="home.html" class="active-link">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
         <div class="header-text">
             <h3 class="subtitle">Mechanical Engineering Portfolio</h3>
             <h1 class="title">Shane Blinkman</h1>
-        </div>
-        <!-- Navigation Dropdown Menu -->
-        <div class="nav-dropdown">
-            <span class="nav-dropdown-icon">☰</span>
-            <ul class="nav-dropdown-list">
-                <li href="#home" onclick="showPage('home'); return false;">Home</li>
-                <li href="#about" onclick="showPage('about'); return false;">About</li>
-                <li href="#projects" onclick="showPage('projects'); return false;">Projects</li>
-                <li href="#skills" onclick="showPage('skills'); return false;">Skills</li>
-                <li href="#resume" onclick="showPage('resume'); return false;">Resume</li>
-                <li href="#contact" onclick="showPage('contact'); return false;">Contact</li>
-            </ul>
         </div>
     </header>
     <!-- Main Body with Page Sections -->

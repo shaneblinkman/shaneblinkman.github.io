@@ -1,0 +1,67 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.page-title {
+    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+    width: 100%;
+    background-color: black; /* Light grey 
+    background, consider an image */
+    color: white;
+    border-bottom: 5px solid red; /* Bottom border */
+}
+
+/**** Main ****/
+/** Main Section **/
+.main-section {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* Adjust padding as needed */
+    gap: 2rem; /* Space between elements */
+}
+/* Let's Chat Container */
+.contact-container { 
+    display: flex;
+    max-width: 50dvw;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+/* Info Container */
+.info-container {
+    display: flex;
+    max-width: 50dvw;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+/** Home Button Section **/
+.home-button {
+    display: flex;
+    justify-content: center;
+}
+.home-button button {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 150ms ease;
+}
