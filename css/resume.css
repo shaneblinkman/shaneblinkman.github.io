@@ -1,0 +1,32 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+/* Header */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+header h1 {
+    text-align: center;
+    padding: 4rem;
+}
+
+/* Main Body */
+main {
+    padding: 2rem;
+    max-width: 100dvp;
+}
+.download-button-container { 
+    display: blockµ;
+}
